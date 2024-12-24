@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+     .navbar {
+            margin-bottom: 10px;
+            background-color: #676868;
+            text-align:center; 
+        }
+
+        .nav-link:hover {
+            background-color: greenyellow;
+            transition: 0.3s ease;
+        }
+    .footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    .Q1,.Q2,.Q3,.Q4,.Q5{
+        font-family:Marker Felt;
+        font-size:20px;
+        padding: 10px;
+    }
+    .Q5{
+        border:10px solid white;
+        background: linear-gradient(to bottom,#56C596,#CFF4D2 );
+        border-radius: 5px; 
+        color:black;
+    }
+        
+    #answer1, #answer2, #answer3, #answer4, #answer5 {
+        display: none;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+    <form class="form-inline">
+        <img src="https://th.bing.com/th/id/OIP.6eYJOCkI6dtqOJxI9BKl3QHaGl?rs=1&pid=ImgDetMain" alt="Logo" width="60" height="60">
+        <h1 style="color:#88F148; font-family:Bodoni MT; margin: 0;"><b>Learn.2.Code</b></h1>
+    </form>
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <ul class="navbar-nav">
+        <li class ="nav-item" ><a class="nav-link " href="jquery.html">INTRODUCTION</a></li>
+        <li class="nav-item"><a class="nav-link " href="keyjquery.html">KEY ELEMENTS</a></li>
+        <li class="nav-item"><a class="nav-link active" href="jqueryQuiz.html">TEST YOUR BRAIN</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html">BACK TO HOME</a></li>
+    </ul>
+    </nav>
+    <h1 style="font-family:impact;padding:10px;">TEST YOUR BRAIN</h1>
+    <h3 style="padding:10px;">Attempt these questions to test your understanding based on the content.</h3>
+    <div class="Q1" style="border:10px solid white;padding:10px;background: linear-gradient(to bottom, #56C596,#CFF4D2 ); border-radius: 5px; color:black;">
+        <p>Q1.What is jQuery?</p>
+        <p>(a) programming Language</p>
+        <p>(b) JavaScript Library</p>
+        <p>(c) Backend Tool</p>
+        <p>(d) none of these</p>
+        <button class="btn btn-primary" id="showAnswerButton1">Show Answer</button>
+        <p id="answer1">(b) JavaScript Library</p>
+    </div>
+    <div class="Q2" style="border:10px solid white;padding:10px;background: linear-gradient(to bottom, #56C596,#CFF4D2 ); border-radius: 5px; color:black;">
+        <p>Q2.What is the correct syntax to use jQuery</p>
+        <p>(a) $(selector).action()</p>
+        <p>(b) $(action).selector()</p>
+        <p>(c) action.jquery.selector()</p>
+        <p>(d) none of these</p>
+        <button class="btn btn-primary" id="showAnswerButton2">Show Answer</button>
+        <p id="answer2">(a) $(selector).action()</p>
+    </div>
+    <div class="Q3" style="border:10px solid white;padding:10px;background: linear-gradient(to bottom, #56C596,#CFF4D2 ); border-radius: 5px; color:black;">
+        <p>Q3.What is the Correct Syntax to hide an element in jQuery?</p>
+        <p>(a) $(slector).hide()</p>
+        <p>(b) $(selector).hide(1000)</p>
+        <p>(c) both (a) and (b)</p>
+        <p>(d) hide().selector.function()</p>
+        <button  class="btn btn-primary" id="showAnswerButton3">Show Answer</button>
+        <p id="answer3">(c) both (a) and (b)</p>
+    </div>
+    <div class="Q4" style="border:10px solid white;padding:10px;background: linear-gradient(to bottom, #56C596,#CFF4D2 ); border-radius: 5px; color:black;">
+        <p>Q4.Can jQuery replicate javaScript?</p>
+        <p>(a) yes</p>
+        <p>(b) no</p>
+        <p>(c) depends on property</p>
+        <p>(d) none of these</p>
+        <button  class="btn btn-primary" id="showAnswerButton4">Show Answer</button>
+        <p id="answer4">(b) no</p>
+    </div>
+    <div class="Q5" style="padding:10px;">
+        <p>Q5.Write the correct syntax to add animation in jQuery?</p>
+        <p>(a) $(selector).animate()</p>
+        <p>(b) giveanimate().selector</p>
+        <p>(c) $(selector).fadeOut</p>
+        <p>(d) none of the above</p>
+        <button  class="btn btn-primary" id="showAnswerButton5">Show Answer</button>
+        <p id="answer5">(a) $(selector).animate()</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#showAnswerButton1').click(function() {
+                $('#answer1').toggle();
+            });
+            $('#showAnswerButton2').click(function() {
+                $('#answer2').toggle();
+            });
+            $('#showAnswerButton3').click(function() {
+                $('#answer3').toggle();
+            });
+            $('#showAnswerButton4').click(function() {
+                $('#answer4').toggle();
+            });
+            $('#showAnswerButton5').click(function() {
+                $('#answer5').toggle();
+            });
+        });
+    </script>
+    <div>
+        <p><br></p>
+        <p><br></p>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Created by Sayan, Anindya, Vidisha & Ankita. All rights reserved.</p>
+    </footer>
+    </div>
+</body>
+</html>

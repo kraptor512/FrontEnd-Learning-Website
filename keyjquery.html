@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 10px;
+            background-color: #676868;
+            text-align:center; 
+        }
+
+        .nav-link:hover {
+            background-color: greenyellow;
+            transition: 0.3s ease;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .img{
+            padding:50px;
+        }
+        .beta{
+            display: none;
+        }
+        .delta{
+            display:none;
+        }
+        #coloured-div {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px; 
+    color: white;
+       }
+       .imi{
+        margin-bottom:80px;
+       }
+      
+        </style>
+        </head>
+    <body>
+        <div class="container-fluid">
+        <form class="form-inline">
+            <img src="https://th.bing.com/th/id/OIP.6eYJOCkI6dtqOJxI9BKl3QHaGl?rs=1&pid=ImgDetMain" alt="Logo" width="60" height="60">
+            <h1 style="color:#88F148; font-family:Bodoni MT; margin: 0;"><b>Learn.2.Code</b></h1>
+        </form>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <ul class="navbar-nav">
+                <li class ="nav-item" ><a class="nav-link " href="jquery.html">INTRODUCTION</a></li>
+                <li class="nav-item"><a class="nav-link active" href="keyjquery.html">KEY ELEMENTS</a></li>
+                <li class="nav-item"><a class="nav-link" href="jqueryquiz.html">TEST YOUR BRAIN</a></li>
+                <li class="nav-item"><a class="nav-link" href="home.html">BACK TO HOME</a></li>
+        </ul>
+        </nav>
+        <h1 style="font-family:impact;padding:10px;">KEY ELEMENTS OF jQUERY</h1>
+        <div style="border:2px solid #98FB98; background-color:#98FB98; border-radius:10px;">
+        <h3 style="font-family: Cambria Math;">jQUERY SYNTAX</h3>
+        
+<p style="font-size:20px;font-family: constantia;">
+    The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
+
+Basic syntax is: <b>$(selector).action()</b>
+    </p><br>
+    <p  style="font-size:20px;font-family: constantia;">Some basic functions of jQuery are:-</p>
+<ul>
+<li><p style="font-size:20px;font-family: constantia;">hide()</p></li>
+<li><p style="font-size:20px;font-family: constantia;">show()</p></li>
+<li><p style="font-size:20px;font-family: constantia;">Toggle()</p></li>
+<li><p style="font-size:20px;font-family: constantia;">fadeIn() and fadeOut()</p></li>
+<li><p style="font-size:20px;font-family: constantia;">Animate()</p></li>
+</ul>
+<p style="font-size:20px;font-family: constantia;">Now Let us discuss all these functions in detail</p></div><br>
+        <div style="border:2px solid #98FB98; background-color:#98FB98; border-radius:10px;">
+     <h3 style="font-family: Cambria Math;">hide() FUNCTION</h3>       
+    <p style="font-size:20px;font-family: constantia;">It is used to hide a particular Element from the Web Page.</p>
+    <p style="font-size:20px;font-family: constantia;">hide(2000) signifies that the element will disappear in 2000 miliseconds i.e 2 seconds. Inside the bracket we can specify the time in which our action will take place</p>
+       </p>
+       <button id="btn1" class="btn btn-primary">Hide the below element</button>
+    </div>
+    <h3 class="alpha">I will disappear after the above button is clicked<br>
+    </h3>
+      <br><br>
+      <div style="border:2px solid #98FB98; background-color:#98FB98; border-radius:10px;">
+        <h3 style="font-family: Cambria Math;">show() FUNCTION</h3>       
+       <p style="font-size:20px;font-family: constantia;">It is used to show a particular Element on the Web Page which was previously hidden by default.</p>
+       <p style="font-size:20px;font-family: constantia;">show(1000) signifies that the element will appear after 1000 miliseconds i.e 1 seconds. Inside the bracket we can specify the time in which our action will take place</p>
+          </p>
+          <button id="btn2" class="btn btn-primary">Show the hidden element</button>
+       </div>
+       <h3 class="beta">Hello Guys!<br>
+        Good Morning Everyone<br>
+       
+        <blockquote><em>"We don't have a great day, we work hard and make our day great." </em></blockquote>
+       </h3>
+       <br><br>
+       <div style="border:2px solid #98FB98; background-color:#98FB98; border-radius:10px;">
+        <h3 style="font-family: Cambria Math;">Toggle() FUNCTION</h3>       
+       <p style="font-size:20px;font-family: constantia;">It shows both hide() and show() functionality on the alternate click of the button.</p>
+       <p style="font-size:20px;font-family: constantia;">Toggle(1000) signifies that the element will appear after 1000 miliseconds after first click of button and on the second click it will disappear in 1000 miliseconds.</p>
+          <button id="btn3" class="btn btn-primary">Toggle button</button>
+       </div>
+       <h3 class="charlie">Some times I appear and sometimes I disappear.</h3>
+       <br><br>
+       <div style="border:2px solid #98FB98; background-color:#98FB98; border-radius:10px;">
+        <h3 style="font-family: Cambria Math;">fadeIn() and fadeOut() FUNCTION</h3>
+        <p style="font-size:20px;font-family: constantia;">The fadeIn() and fadeOut() functions are commonly used in JavaScript and jQuery for smooth animations where an element's visibility changes gradually.</p>
+        <div>
+            <button id="btn4" class="btn btn-primary" style="margin-right: 10px;">fadeIn()</button>
+            <button id="btn5" class="btn btn-primary">fadeOut()</button>
+        </div>
+    </div>
+    
+       <h3 class="delta" style="padding:20px">Hii,<br> Hope you all are doing well <br>
+    Best of luck for your exams</h3>
+       <br><br>
+       <div style="border:2px solid #98FB98; background-color:#98FB98; border-radius:10px;">
+        <h3 style="font-family: Cambria Math;">Animate() FUNCTION</h3>       
+       <p style="font-size:20px;font-family: constantia;">The animate() function in jQuery is used to create custom animations by modifying the CSS properties of an element over a specified duration. It provides more flexibility than pre-built effects like fadeIn() or slideToggle(), allowing you to animate almost any numeric CSS property.</p>
+       <p style="font-size:20px;font-family: constantia;"><b>$(selector).animate(properties, duration, easing, complete);</b></p>
+          </p>
+          <button id="btn6" class="btn btn-primary">Animate</button>
+       </div>
+       <br>
+       <div id="coloured-div" >
+        <p>Hello, I am coloured div</p>
+       </div>
+       <br><br>
+       <div style="border:2px solid #98FB98; background-color:#98FB98; border-radius:10px;">
+       <h3>The above were some basic functionalities of using jQuery we can also add more complex functionalities. The code for the above functionalities is given below:-</h3>
+       </div>
+       <br>
+       <div class="imi"><img src="jQuery_code.png" alt="jquerycode"></div>
+       <footer class="footer">
+        <p>&copy; Created by Sayan, Anindya, Vidisha & Ankita. All rights reserved.</p>
+    </footer>
+    </div> 
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".alpha").hide(1500);
+            });
+           $("#btn2").click(function(){
+               $(".beta").show(2000);
+           });
+           $("#btn3").click(function(){
+            $(".charlie").toggle(1000);
+           })
+           $("#btn4").click(function(){
+            $(".delta").fadeIn(2000);
+           });
+           $("#btn5").click(function(){
+            $(".delta").fadeOut(2000);
+           });
+           $("#btn6").click(function(){
+            $("#coloured-div").animate({
+                width: "200px",
+                height: "50px",
+                opacity: 0.5,
+                 marginBottom: "10px"
+            }, 1500);
+        });
+        });
+    </script>
+
+    </body>
+    </html>
+
+
+
+
+
+
+
+        
